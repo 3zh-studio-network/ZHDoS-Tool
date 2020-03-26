@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>ZHDoS Tool UI Edition</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script>window.$ = window.jQuery = require('jquery');</script>
+		<script src="ping.js"></script>
+		<script>
+			function exitapp() {
+				const remote = require('electron').remote;
+				let w = remote.getCurrentWindow();
+				w.close();
+			}
+		</script>
+	</head>
+	<body>
+		<dir class="site-content" style="position: relative;">
+			<h1>ZHDoS Tool UI Edition</h1>
+			<br>
+			<h3>Times: <input type="number" class="dossetnum"></h3>
+			<h3>Site Url: <input type="url" class="dosseturl"></h3>
+			<br>
+			<input type="button" value="Start DoS" onclick="fundos($('.dosseturl').val(),$('.dossetnum').val())">
+			<br>
+			<br>
+			<h3><span class="status"></span></h3>
+			<br>
+			<h3>DoS Url: <span class="dosurl"></span></h3>
+			<br>
+			<h3>Now DoS: <span class="dosn"></span></h3>
+			<h3>All DoS: <span class="dosa"></span></h3>
+			<br>
+			<a onclick="exitapp()">Exit ZHDoS Tool</a>
+		</dir>
+		<br>
+		<div class="footer">
+			<h6>ZHDoS Tool is a open source web tool</h6>
+			<h6><a href="https://github.com/3zh-studio-network/ZHDoS-Tool/">GitHub Page</a> | <a href="https://www.3zh-studio.com/service/terms">Terms of Service</a> | <a href="https://www.3zh-studio.com/service/privacy">Privacy Policy</a></h6>
+		</div>
+	</body>
+</html>

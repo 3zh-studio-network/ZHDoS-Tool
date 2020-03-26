@@ -2,17 +2,39 @@
   "name": "zhdos-tool",
   "version": "0.0.1",
   "description": "The DoS Tool",
-  "main": "curl.js",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "main": "main.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@3zh-studio-network/"
+  },
   "dependencies": {
     "child_process": "^1.0.2",
     "clear": "^0.1.0",
-    "request": "^2.88.2",
-    "readline-sync": "^1.4.10"
+    "jquery": "^3.4.1",
+    "readline-sync": "^1.4.10",
+    "request": "^2.88.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "electron .",
+	"build": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "productName": "ZHDoS",
+    "appId": "com.threezhstudio.devtool.dos",
+    "directories": {
+      "output": "build"
+    },
+    "mac": {
+      "icon": "icon/logo.png"
+    },
+    "win": {
+      "icon": "icon/logo.png"
+    },
+    "linux": {
+      "icon": "icon/logo.png"
+    }
   },
   "author": "ZHDeveloper",
   "license": "ISC"

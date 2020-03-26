@@ -1,0 +1,384 @@
+body {
+	margin: 0;
+	padding:0;
+	font-family: Quicksand, "Noto Sans TC", sans-serif;
+	word-break: break-all;
+	text-align: center;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .3s;
+}
+
+nav.black {
+	background: rgba(0,0,0,0.8);
+	height: 100px;
+	padding: 10px 100px;
+}
+
+nav .logo {
+	padding: 5px 20px;
+	height: 80px;
+	float: left;
+	font-size: 24px;
+	transition: .3s;
+}
+
+nav.black .logo {
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	list-style: none;
+	
+}
+
+nav ul li a {
+	line-height: 80px;
+	color: #151515;
+	padding: 12px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .3s;
+}
+
+nav.black ul li a {
+	color: #fff
+}
+
+nav ul li a:focus {
+	outline: none;
+}
+
+nav ul li a.active {
+	background: #E2472F;
+	color: #fff;
+	border-radius: 6px;
+}
+
+nav ul li a.login {
+	background: #ffe263;
+	color: #fff;
+	border-radius: 6px;
+}
+
+section.secl {
+	width: 100%;
+	height: 100vh;
+	background: url("/img/H-Coin%20Logo%20Big%20(NB).svg");
+	background-size: cover;
+	background-position: center;
+}
+
+.content {
+	margin-top: 80px;
+}
+
+.content p {
+	width: 900px;
+	margin: 30px auto;
+	text-align: justify;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+@font-face {
+  font-family: TNCEasyFontSmoothVersion;
+  src: local('TNCEasyFontSmoothVersion'), url(/fonts/TNCEasyFontSmoothVersion.woff);
+}
+.logoh {
+	font-family: TNCEasyFontSmoothVersion;
+}
+
+
+
+.hc_balance {
+	float: right;
+	width: 45%;
+	height: 20em;
+	background-color: #1565c0;
+	margin: 8px;
+	border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 1px 2px 0px rgba(60,64,67,0.3), 0px 1px 3px 1px rgba(60,64,67,0.15);
+	color: #f4f8fc;
+}
+
+.hc_do {
+	text-decoration: none;
+	float: left;
+	width: 45%;
+	height: auto;
+	margin: 8px;
+	border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 1px 2px 0px rgba(60,64,67,0.3), 0px 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.hc_bal {
+	font-size: 50px;
+}
+
+
+
+.hc_id {
+	float: left;
+	width: 45%;
+	height: 50%;
+	margin: 8px;
+	border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 1px 2px 0px rgba(60,64,67,0.3), 0px 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.hc_many {
+	clear: both;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 1px 2px 0px rgba(60,64,67,0.3), 0px 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.hc_dashboard {
+	margin: 8px;
+}
+
+.hc_transfer {
+	float: left;
+	background-color: darkturquoise;
+	color: #fdffff;
+	border-radius: 6px;
+	width: 45%;
+	height: 30px;
+	margin: 8px;
+	border-radius: 8px;
+	text-decoration: none;
+}
+
+.hc_payin {
+	float: right;
+	background-color: darkturquoise;
+	color: #fdffff;
+	border-radius: 6px;
+	width: 45%;
+	height: 30px;
+	margin: 8px;
+	border-radius: 8px;
+	text-decoration: none;
+}
+
+.hc_join_p {
+	text-align:center;
+	float: left;
+	height: 50%;
+	width: 45%;
+	margin: 15px;
+	border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 1px 2px 0px rgba(60,64,67,0.3), 0px 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.hc_currently {
+	text-align:center;
+}
+
+.logoimg {
+	background-image: url(img/H-Coin Logo.png);
+	width: 80px;
+	height: 80px;
+}
+
+img {
+	pointer-events: none;
+}
+
+
+.hc_lg_box {
+	text-align:center;
+	margin: 1px;
+	border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 1px 2px 0px rgba(60,64,67,0.3), 0px 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+input {
+	text-align: center;
+	background-color: white;
+	border-radius: 3px;
+	-webkit-appearance: none;
+	border:1px solid #DBDBDB;
+	box-shadow: 0;
+	width: 200px;
+    height: 30px;
+}
+
+hc_r {
+	float: right;
+}
+hc_l {
+	float: left;
+}
+
+.payinfo {
+	text-align: center;
+	width: 65%;
+	height: 250px;
+	float: right;
+	margin: 8px;
+	border-radius: 8px;
+	border: 0;
+	box-shadow: 0px 1px 2px 0px rgba(60,64,67,0.3), 0px 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.payfrom {
+	right: 50%;
+	text-align: center;
+	height: 250px;
+}
+
+.loader {
+	margin: 0 0 0 -55px;
+    background-color: transparent;
+    animation: rotation .7s infinite linear;
+    border-left: 5px solid #cbcbca;
+    border-right: 5px solid #cbcbca;
+    border-bottom: 5px solid #cbcbca;
+    border-top: 5px solid #2380be;
+    border-radius: 100%;
+}
+.nowpage {
+	border-bottom: 2px solid currentColor;
+	border-bottom-color: #ff8a00;
+	border-radius: 10px;
+	height: 15px;
+}
+
+input {
+	text-align: center;
+	background-color: white;
+	border-radius: 3px;
+	-webkit-appearance: none;
+	border:1px solid #DBDBDB;
+	box-shadow: 0;
+	width: 200px;
+	height: 30px;
+}
+input:hover {
+	border:1px solid #b8b8b8;
+	color: #a1a1a1;
+	transition-duration: .3s;
+}
+input:active {
+	border:1px solid #DBDBDB;
+	color: #ededed;
+	background-color: #b8b8b8;
+	transition: padding 2s;
+}
+.logbox1 {
+	text-align:center;
+	margin: 15px;
+}
+
+.UserInfo {
+	display: inline-block;
+	width: 50%;
+	margin: 5px;
+}
+
+.MinecraftInfo {
+	display: inline-block;
+	width: 50%;
+	margin: 5px;
+}
+
+.AppInfo {
+	display: inline-block;
+	width: 50%;
+	margin: 5px;
+}
+
+
+
+a {
+	border:2px solid #DBDBDB;
+	border-radius: 3px;
+	line-height: 80px;
+	color: #151515;
+	padding: 12px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .3s;
+}
+
+a:focus {
+	outline: none;
+}
+
+a:hover {
+	border:2px solid #b8b8b8;
+	color: #a1a1a1;
+	transition-duration: .3s;
+}
+
+select {
+	text-align: center;
+	background-color: white;
+	border-radius: 3px;
+	-webkit-appearance: none;
+	border:1px solid #DBDBDB;
+	box-shadow: 0;
+	width: 200px;
+    height: 30px;
+}
+
+select:hover {
+	border:1px solid #b8b8b8;
+	color: #a1a1a1;
+	transition-duration: .3s;
+}
+
+select:active {
+	border:1px solid #DBDBDB;
+	color: #ededed;
+	background-color: #b8b8b8;
+	transition: padding 2s;
+}
+
+option {
+	margin: 5px;
+}
+
+.site-content{
+	position: relative;
+	padding: 5px 5px;
+}
+
+.footer{
+	width: 100%;
+	background-color: #525252;
+	color: #fff;
+	position: absolute;
+}
+
+.footer a{
+	color: #fff;
+	border: 0;
+	padding: 0 5px;
+	line-height: 0;
+	text-transform: none;
+}
