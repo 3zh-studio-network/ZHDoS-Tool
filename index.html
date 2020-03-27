@@ -11,10 +11,19 @@
 		<script>window.$ = window.jQuery = require('jquery');</script>
 		<script src="ping.js"></script>
 		<script>
+			var shell = require('electron').shell;
+			$(document).on('click', 'a[href^="http"]', function(event) {
+				event.preventDefault();
+				shell.openExternal(this.href);
+			});
 			function exitapp() {
 				const remote = require('electron').remote;
 				let w = remote.getCurrentWindow();
 				w.close();
+			}
+			function chtxt() {
+				$(".dosurl").html($('.dosseturl').val());
+				$(".status").html('The DoS Tool is start to DoS "'+$('.dosseturl').val()+'"');
 			}
 		</script>
 	</head>
@@ -25,7 +34,7 @@
 			<h3>Times: <input type="number" class="dossetnum"></h3>
 			<h3>Site Url: <input type="url" class="dosseturl"></h3>
 			<br>
-			<input type="button" value="Start DoS" onclick="fundos($('.dosseturl').val(),$('.dossetnum').val())">
+			<input type="button" value="Start DoS" onclick="chtxt();fundos($('.dosseturl').val(),$('.dossetnum').val());">
 			<br>
 			<br>
 			<h3><span class="status"></span></h3>
@@ -35,7 +44,7 @@
 			<h3>Now DoS: <span class="dosn"></span></h3>
 			<h3>All DoS: <span class="dosa"></span></h3>
 			<br>
-			<a onclick="exitapp()">Exit ZHDoS Tool</a>
+			<input type="button" onclick="exitapp()" value="Exit ZHDoS Tool">
 		</dir>
 		<br>
 		<div class="footer">

@@ -1,6 +1,6 @@
 {
   "name": "zhdos-tool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The DoS Tool",
   "main": "main.js",
   "publishConfig": {
@@ -17,7 +17,7 @@
   "scripts": {
     "test": "test",
     "start": "electron .",
-	"build": "electron-builder --dir",
+    "build": "electron-builder --dir",
     "dist": "electron-builder"
   },
   "build": {
